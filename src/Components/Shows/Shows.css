@@ -1,0 +1,56 @@
+.shows{
+    margin: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.show {
+    flex-basis: 31%;
+    position: relative; /* This is the anchor for the absolute text */
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the blue tint doesn't spill over rounded corners */
+}
+.show img{
+    width: 100% 60px;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+.show {
+    flex-basis: 31%;
+    position: relative;
+    overflow: hidden;
+
+}
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 15, 152,0.0.5 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 40%;
+    transition: 0.4s;
+}
+.caption img{
+    width: 30px;
+    margin-bottom: 10px;
+}
+.caption p {
+    margin: 0;
+    font-weight: 600;
+}
+.show:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}

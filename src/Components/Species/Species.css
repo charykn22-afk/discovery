@@ -1,0 +1,26 @@
+.species{
+    margin: 80px auto;
+    width: 90%;
+    text-align: center;
+}
+
+
+.gallery {
+    display: flex; /* Arranges images in a row */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.gallery img {
+    width: 23%; /* Constrains image size so they don't get huge */
+    border-radius: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Adds a professional zoom effect */
+}
+

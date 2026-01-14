@@ -1,6 +1,6 @@
 import React from 'react'
 import './Shows.css'
-import MoonSHINERS from '../../assets/moonSHINERS.jpeg'
+
 import contraband from '../../assets/contraband.jpeg'
 import expedition from '../../assets/expedition.jpeg'
 import program_1 from '../../assets/programs-1.jpg'
@@ -12,7 +12,7 @@ const Programs = () => {
     <div className='shows container'>
         {/* Program 1 */}
         <div className="show">
-            <img src={MoonSHINERS} alt="Nature" />
+            <img src={Moonshiners} alt="Nature" />
             <div className="caption">
                 <p>MoonSHINERS</p>
             </div>

@@ -17,7 +17,7 @@ const App = () => {
       <Hero/>
       <div className="container">
         <Title subTitle='Our PROGRAMS' title='No Stopping Once Started Play' />
-        <Shows/>
+        {/*<Shows/> */}
         <Episodes/>
         <About />
          <Title subTitle='Gallery' title='Species' />

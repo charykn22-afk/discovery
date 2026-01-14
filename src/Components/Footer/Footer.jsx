@@ -5,7 +5,7 @@ import discoverymain_logo from '../../assets/logomain.png'
 
 const Footer = () => {
   return (
-    <div className='footer-container'>
+    <div className='footer-container' name='Footer'>
       {/* Newsletter / Follow Us Section */}
       <div className='follow-us-section'>
         <div className='follow-left'>

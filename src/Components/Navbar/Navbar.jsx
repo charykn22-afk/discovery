@@ -12,6 +12,7 @@ const Navbar = () => {
         window.scrollY > 50 ? setSticky(true) : setSticky(false);
     })
     },[]);
+    
   return (
     <nav className={`container ${sticky? 'dark-nav' : ''}`}>
       <img src={logo} alt=""  className='logo' />

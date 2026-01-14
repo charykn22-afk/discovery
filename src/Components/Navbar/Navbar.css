@@ -23,3 +23,23 @@ nav ul li{
     background: #2668c5;
     transition: 0.5s;
 }
+/* Mobile View (max-width: 700px) */
+@media (max-width: 700px) {
+    nav {
+        padding: 15px 5%;
+    }
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -200px; /* Hidden off-screen */
+        width: 200px;
+        height: 100vh;
+        background: #111;
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+        transition: 0.5s;
+        z-index: -1;
+    }
+    /* Add a class 'show-menu' via React state to set right: 0 */
+}

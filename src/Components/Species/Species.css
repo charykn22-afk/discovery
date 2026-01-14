@@ -23,4 +23,13 @@
 .gallery img:hover {
     transform: scale(1.05); /* Adds a professional zoom effect */
 }
+.gallery img {
+    width: 23%; /* Desktop: 4 images per row */
+}
 
+@media (max-width: 700px) {
+    .gallery img {
+        width: 48%; /* Mobile: 2 images per row */
+        margin-bottom: 10px;
+    }
+}

@@ -33,3 +33,26 @@
     font-weight: 600;
     cursor: pointer;
 }
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Desktop: 3 columns */
+    gap: 30px;
+}
+
+/* Tablet View */
+@media (max-width: 900px) {
+    .episodes-grid {
+        grid-template-columns: repeat(2, 1fr); /* Tablet: 2 columns */
+    }
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .episodes-grid {
+        grid-template-columns: 1fr; /* Mobile: 1 column (Stacked) */
+        gap: 20px;
+    }
+    .episode-card h5 {
+        font-size: 16px; /* Smaller text for small screens */
+    }
+}

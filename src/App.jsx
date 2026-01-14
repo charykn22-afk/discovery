@@ -8,9 +8,14 @@ import Species from './Components/Species/Species'
 import Schedule from './Components/Schedule/Schedule'
 import Footer from './Components/Footer/Footer'
 import Episodes from './Components/Episodes/Episodes'
+import Videoplayer from './Components/Videoplayer/Videoplayer'
 
 
 const App = () => {
+
+
+const[playState, setPlayState] = React.useState(false);
+
   return (
     <div>
       <Navbar/>
@@ -19,7 +24,7 @@ const App = () => {
         <Title subTitle='Our PROGRAMS' title='No Stopping Once Started Play' />
         {/*<Shows/> */}
         <Episodes/>
-        <About />
+        <About setPlayState={setPlayState} />
          <Title subTitle='Gallery' title='Species' />
          <Species/>
          <Title subTitle='Schedule' title='What Nature Says' />
@@ -27,6 +32,7 @@ const App = () => {
          <Title subTitle='' title='Follow Us!' />
          <Footer/>
       </div>
+      <Videoplayer playState={playState} setPlayState={setPlayState} />
     </div>
   )
 }

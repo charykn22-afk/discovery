@@ -54,3 +54,18 @@
     opacity: 1;
     padding-top: 0;
 }
+.show:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}   
+/* -----media query----- */
+@media (max-width: 900px) {
+    .shows{
+        flex-direction: column;
+        margin: 40px;
+    }
+    .show{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}

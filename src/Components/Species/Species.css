@@ -27,9 +27,13 @@
     width: 23%; /* Desktop: 4 images per row */
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .gallery img {
         width: 48%; /* Mobile: 2 images per row */
-        margin-bottom: 10px;
+        margin-bottom: 25px;
+    }
+    .gallery{
+        flex-wrap: wrap;
     }
 }
+

@@ -19,7 +19,7 @@ const Species = () => {
       {/* Wrapping the button in an <a> tag to open in a new tab */}
       <a 
         href="https://www.discovery.com/nature" 
-        target="_blank" 
+        target=""
         rel="noopener noreferrer"
         className='see-more-link'
       >

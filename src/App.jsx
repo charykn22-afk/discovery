@@ -33,7 +33,7 @@ const App = () => {
               <Footer />
             </div>
             {/* The Video Player sits here on the Home Page */}
-            <Videoplayer playState={playState} setPlayState={setPlayState} />
+          {/* <Videoplayer/> */}
           </div>
         } />
 

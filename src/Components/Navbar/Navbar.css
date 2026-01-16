@@ -1,32 +1,68 @@
-nav {
- width: 100%;
-/* background: #1d1b1b; */
- padding: 4px 0;
- position: fixed;
- top: 0;
- left: 0;
- display: flex;
- align-items: center;
-justify-content: space-between;
-z-index: 10;
+/* --- Navbar Base Styles --- */
+.navbar {
+    width: 100%;
+    padding: 15px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo left, Links right */
+    z-index: 10005;
+    transition: 0.5s ease; /* Smooth transition for background color */
+    background: transparent;
 }
-.logo{
-    width: 100px;
+
+/* --- Scroll Effect Color --- */
+.dark-nav {
+    background: #000fAA; /* Discovery Blue background on scroll */
+    padding: 5px 5%; /* Slightly shrinks the bar on scroll for a better look */
 }
-nav ul li{
-    display: inline-block;
+
+/* --- Logo Size Control --- */
+.logo {
+    width: 110px; /* Fixed size to prevent it from changing */
+    cursor: pointer;
+}
+
+/* --- Hover Effects --- */
+.navbar ul li {
     list-style: none;
-    margin: 5px 20px;
-    font-style: 16px;
+    display: inline-block;
+    margin: 5px 15px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
 }
-.dark-nav{
-    background: #2668c5;
-    transition: 0.5s;
+
+.navbar ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #00d2ff; /* Underline color */
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.4s;
 }
-.menu{
-    display: none;
+
+.navbar ul li:hover::after {
+    width: 100%; /* Animates the underline on hover */
 }
-/* MEDIA QUERY */
+
+/* --- Mobile Media Query --- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+    .logo {
+        width: 140px; /* Smaller logo for mobile */
+    }
+    .navbar ul {
+        display: none; /* Consider using a mobile menu icon if needed */
+    }
+    /* MEDIA QUERY */
  @media (max-width: 1000px) {
     .logo{
         width: 140px;
@@ -40,28 +76,4 @@ nav ul li{
     padding:15px 0 ;
    }
 }
-   nav ul{
-    position: fixed;
-    top: 0;
-    right: 0px;
-    bottom: 0;
-    background: #eac039;
-    z-index: -1;
-    width: 200PX;
-    padding-top: 70px;
-    transition: 0.5s;
-   }
-   nav ul li{
-    display: block;
-    margin: 25px 40px;
- }
-.menu-bar{
-   
-    display: block;
-    width: 30px;
-    cursor: pointer;
-
- }   
- .hide-mobile-menu{
-    right: -200px;
- }
+}

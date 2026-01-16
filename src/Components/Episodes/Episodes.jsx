@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './episodes.css' 
+import './Episodes.css' 
 import moonshiner from '../../assets/moonshiner.jpeg'
 import expedition from '../../assets/expedition.jpeg'
 import contraband from '../../assets/contraband.jpeg'
